@@ -41,7 +41,30 @@ Only a **minimal overview and high-level structure** are shared here. Full datas
 - Scans crop rows using a camera in front of the plants.  
 - **Detects weeds in real time** using the on-board AI model.  
 - Sends a trigger to the actuator system when a weed is found in the defined zone.  
-- The actuator then performs a **targeted mechanical action** to remove or disturb the weed.  
+- The actuator then performs a **targeted mechanical action** to remove or disturb the weed.
+
+
+
+  ## 4. Tech Stack
+
+- **Edge AI:** YOLO (custom-trained), PyTorch
+- **Hardware:** NVIDIA Jetson Xavier NX, ESP32
+- **Mechanism:** Custom 2D linear stage (X–Y motion)
+- **Power:** 24V Li-ion battery with DC-DC converters
+- **Tools Used:** Google Colab (training), Ubuntu/Linux, Serial communication
+
+
+
+
+## 5. My Contribution
+
+- Designed the end-to-end system architecture (AI + hardware + motion control)
+- Captured and prepared the custom weed dataset (YOLO format)
+- Trained the YOLO model for real-time weed classification
+- Implemented the inference pipeline on the Jetson Xavier NX
+- Developed the ESP32-based control logic for the 2D linear stage
+- Integrated the hardware, motion mechanism, and AI model into a working prototype
+
 
 In simple words:  
 > SmartWeed looks at the field, recognizes weeds using AI, and activates a mechanism to remove them automatically.
