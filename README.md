@@ -48,7 +48,7 @@ Only a **minimal overview and high-level structure** are shared here. Full datas
   ## 4. Tech Stack
 
 - **Edge AI:** YOLO (custom-trained), PyTorch
-- **Hardware:** NVIDIA Jetson Xavier NX, ESP32
+- **Hardware:** NVIDIA Jetson Xavier NX, Duet 2 WiFi Board
 - **Mechanism:** Custom 2D linear stage (X–Y motion)
 - **Power:** 24V Li-ion battery with DC-DC converters
 - **Tools Used:** Google Colab (training), Ubuntu/Linux, Serial communication
